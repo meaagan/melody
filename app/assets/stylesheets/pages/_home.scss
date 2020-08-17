@@ -1,1 +1,136 @@
 // Specific CSS for your home-page
+body {
+  background-color: #0B0C10;
+}
+
+.navbar-lewagon {
+  justify-content: space-between;
+  background: #0B0C10;
+  background-opacity: 0.3;
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 40px;
+}
+
+#text {
+  color: #66FCF1;
+}
+
+#logo {
+  color: #66FCF1;
+}
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 300px 0;
+}
+
+.banner h1 {
+  margin: 0;
+  color: #66FCF1;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.banner p {
+  font-size: 20px;
+  color: #66FCF1;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.search-form-control {
+  position: relative;
+}
+
+.search-form-control .btn {
+  position: absolute;
+  top: 8px;
+  bottom: 8px;
+  right: 8px;
+}
+
+.search-form-control .form-control {
+  height: 3.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  border: 1px solid #E7E7E7;
+  border-radius: 5px;
+  color: #C5C6C7;
+}
+
+.search-form-control .form-control:focus {
+  border: 1px solid #1EDD88;
+  outline: none !important;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.slide {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.footer {
+  background: #0B0C10;
+  display: flex;
+  // align-items: center;
+  justify-content: center;
+  height: 100px;
+  padding: 0px 50px;
+  color: rgba(0,0,0,0.3);
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+.footer-links a {
+  color: black;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0px 10px;
+  color: #66FCF1;
+}
+
+.footer-copyright {
+  color: #66FCF1;
+  display: flex;
+  align-items: center;
+  opacity: 0.5;
+}
+.card-product {
+  overflow: hidden;
+  height: 120px;
+  background: #C5C6C7;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+}
+
+.card-product img {
+  height: 100%;
+  width: 120px;
+  object-fit: cover;
+}
+
+.card-product h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-product p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.card-product .card-product-infos {
+  padding: 16px;
+}
+
