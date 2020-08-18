@@ -1,0 +1,16 @@
+<h2>hello</h2>
+
+<ul>
+  <% @bookings.each do |booking| %>
+  <li>
+    <%= booking.instrument.name %>
+    <%= booking.content %>
+    <%= booking.user.first_name %>
+    <% if booking.status == false %>
+      <%= "[ ]" %>
+      <% else  %>
+      <%= "[X]"  %>
+    <% end %>
+  </li>
+  <% end %>
+</ul>
