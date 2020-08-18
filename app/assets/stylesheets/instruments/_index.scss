@@ -1,0 +1,26 @@
+#products {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 200px;
+}
+
+#products > img {
+  width: 250px;
+}
+
+.selectors {
+  display: flex;
+  justify-content: space-around;
+}
+
+.price {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  top: 70px;
+  left: 425px;
+}
+
+.card-product-infos > p {
+  font-size: 15px;
+}
