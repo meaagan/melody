@@ -1,7 +1,9 @@
 .card-trip {
   overflow: hidden;
-  background: white;
+  background: #C5C6C7;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  margin-top: 40px;
 }
 
 .card-trip > img {
@@ -35,4 +37,36 @@
   right: 16px;
   top: -20px;
   width: 40px;
+}
+
+.calendar {
+  background-color: #C5C6C7;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+#image {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.slide {
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#date-selection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#btn-book{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
 }
