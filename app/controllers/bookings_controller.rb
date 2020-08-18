@@ -1,9 +1,7 @@
 class BookingsController < ApplicationController
   def index
+    # @bookings = Booking.where(@booking.user.id = current_user)
     @bookings = Booking.all
-  end
-
-  def update
   end
 
   def new
