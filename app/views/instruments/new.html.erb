@@ -1,0 +1,12 @@
+<div class="container">
+  <h2>Rent Instrument</h1>
+
+  <%= simple_form_for @instrument do |f| %>
+    <%= f.input :name, label: "Name" %>
+    <%= f.input :category, label: "Category" %>
+    <%= f.input :description, label: "Description" %>
+    <%= f.input :location, label: "Location" %>
+    <%= f.input :price, label: "Price" %>
+    <%= f.submit "Submit Instrument", class:"btn btn-primary" %>
+  <% end %>
+</div>
