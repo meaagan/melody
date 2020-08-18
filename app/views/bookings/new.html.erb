@@ -1,0 +1,6 @@
+<h1>Book <%= @instrument.name %></h1>
+
+<%= simple_form_for [@instrument, @booking] do |f| %>
+  <%= f.input :content %>
+  <%= f.submit "Send a booking" %>
+<% end %>
