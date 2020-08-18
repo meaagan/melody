@@ -1,6 +1,8 @@
-<h1>Book <%= @instrument.name %></h1>
+<div class="container form">
+  <h1>Book <%= @instrument.name %></h1>
 
-<%= simple_form_for [@instrument, @booking] do |f| %>
-  <%= f.input :content %>
-  <%= f.submit "Send a booking" %>
-<% end %>
+  <%= simple_form_for [@instrument, @booking] do |f| %>
+    <%= f.input :content, label: "Description" %>
+    <%= f.submit "Send a booking", class:"btn btn-primary" %>
+  <% end %>
+</div>
