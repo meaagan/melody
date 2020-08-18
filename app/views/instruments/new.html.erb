@@ -3,9 +3,9 @@
 
   <%= simple_form_for @instrument do |f| %>
     <%= f.input :name, label: "Name" %>
-    <%= f.input :category, label: "Category" %>
+    <%= f.input :category, collection: [ "Piano", "Guitar", "Violin", "Flute", "Drums", "Other" ] %>
     <%= f.input :description, label: "Description" %>
-    <%= f.input :location, label: "Location" %>
+    <%= f.input :location, collection: [ "Montreal", "Sherbrooke", "Quebec City", "Toronto", "Vancouver" ]  %>
     <%= f.input :price, label: "Price" %>
     <%= f.submit "Submit Instrument", class:"btn btn-primary" %>
   <% end %>
