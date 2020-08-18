@@ -6,7 +6,8 @@ Rails.application.routes.draw do
     resources :bookings, only: [:new, :create]
   end
 
-  resources :bookings, only: [:index, :update]
+  resources :bookings, only: [:index, :update] do
+    get "/confirmation", to: "bookings#confirmation"
+  end
   # generic page for confirmation
-  get "bookings/confirmation", to: "bookings#confirmation"
 end
