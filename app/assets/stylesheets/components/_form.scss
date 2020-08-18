@@ -1,14 +1,21 @@
-.container.form {
+h2 {
+  color: #C5C6C7;
+}
+
+.simple_form {
   margin-top: 30px;
-  h1 {
-    color: #C5C6C7;
-    margin-bottom: 15px;
-  }
-  .text {
+
+  .form-inputs {
     color: #C5C6C7;
   }
 
-  .form-control {
-    color: #0B0C10;
+  .text.optional {
+    color: #C5C6C7;
   }
+
+  .form-actions.btn {
+    color: #ffffff;
+    background-color: #C5C6C7;
+  }
+
 }
