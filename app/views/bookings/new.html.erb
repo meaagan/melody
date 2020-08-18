@@ -1,5 +1,5 @@
-<div class="container form">
-  <h1>Book <%= @instrument.name %></h1>
+<div class="container">
+  <h2>Book <%= @instrument.name %></h1>
 
   <%= simple_form_for [@instrument, @booking] do |f| %>
     <%= f.input :content, label: "Description" %>
