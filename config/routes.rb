@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   end
 
   resources :bookings, only: [:index, :update]
+  # generic page for confirmation
+  get "bookings/confirmation", to: "bookings#confirmation"
 end
