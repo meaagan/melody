@@ -1,3 +1,63 @@
 // Import page-specific CSS files here.
 @import "home";
 @import "confirmation";
+
+.card-trip {
+  overflow: hidden;
+  background: #C5C6C7;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+.card-trip > img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-trip h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-trip p {
+  font-size: 12px;
+  opacity: .7;
+  margin: 0;
+}
+
+.card-trip .card-trip-infos {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+
+.card-trip-infos .card-trip-user {
+  position: absolute;
+  right: 16px;
+  top: -20px;
+  width: 40px;
+}
+
+.calendar {
+  background-color: #C5C6C7;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+#image {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.slide {
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
