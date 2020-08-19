@@ -13,8 +13,8 @@
           <%= link_to "Accept", booking_accept_path(booking), class: "btn btn-primary", method: :patch %>
           <%= link_to "Reject", booking_reject_path(booking), class: "btn btn-secondary", method: :patch %>
           <% else %>
-          <p class="btn">Accepted</p>
-          <% end %>
+            <p class="">Accepted</p>
+        <% end %>
         </div>
       </div>
     <% end %>
