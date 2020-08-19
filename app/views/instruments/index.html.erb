@@ -51,7 +51,7 @@
         <h1><%= instrument.name.titleize %></h1>
         <h3><%= instrument.category.capitalize %></h3>
         <p id="description"><%= instrument.description %></p>
-        <%= link_to "Show instrument", instruments_path(instrument), class: 'card-link' %>
+        <%= link_to "Show instrument", instrument_path(instrument), class: 'card-link' %>
       </div>
       <div class="card-product-info-right">
         <h3><%= instrument.location %></h3>
