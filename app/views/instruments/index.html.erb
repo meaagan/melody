@@ -31,47 +31,33 @@
   </div>
 </div>
 </div>
-<div class="card-product" id="products">
-  <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
-  <div class="card-product-infos">
-    <h1>Product name</h1>
-    <p>Product description with <strong>relevant info</strong> only.</p>
+<% @instruments.each do |instrument| %>
+  <div class="card-product" id="products">
+    <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+    <div class="card-product-infos">
+      <div class="card-product-info-left">
+        <h1><%= instrument.name %></h1>
+        <h3><%= instrument.category %></h3>
+        <p id="description"><%= instrument.description %></p>
+        <%= link_to "Show instrument", instruments_path(instrument), class: 'card-link' %>
+      </div>
+      <div class="card-product-info-right">
+        <h3><%= instrument.location %></h3>
+        <h4>$<%= instrument.price %></h4>
+      </div>
+    </div>
   </div>
-  <div class="price">
-    <h4>$50</h4>
-  </div>
-</div>
-<div class="card-product" id="products">
-  <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
-  <div class="card-product-infos">
-    <h1>Product name</h1>
-    <p>Product description with <strong>relevant info</strong> only.</p>
-  </div>
-  <div class="price">
-    <h4>$50</h4>
-  </div>
-</div>
-<div class="card-product" id="products">
-  <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
-  <div class="card-product-infos">
-    <h1>Product name</h1>
-    <p>Product description with <strong>relevant info</strong> only.</p>
-  </div>
-  <div class="price">
-    <h4>$50</h4>
-  </div>
-</div>
-<div class="card-product" id="products">
-  <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
-  <div class="card-product-infos">
-    <h1>Product name</h1>
-    <p>Product description with <strong>relevant info</strong> only.</p>
-  </div>
-  <div class="price">
-    <h4>$50</h4>
-  </div>
-</div>
+<% end %>
 </div>
 
-
+<!-- <div class="row">
+    <% @instruments.each do |instrument| %>
+      <div class="col-12 col-md-6 col-lg-3">
+          <div class="card-description">
+            <h2><%= instrument.name %></h2>
+          </div>
+          <%= link_to "", instruments_path(instrument), class: 'card-link' %>
+        </div>
+    <% end %>
+  </div> -->
 
