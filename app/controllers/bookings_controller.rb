@@ -1,16 +1,18 @@
 class BookingsController < ApplicationController
   def index
-    @bookings = Booking.joins(:instrument).where(instruments: {user: current_user}, status: nil || true)
+    @bookings = Booking.joins(:instrument).where(instruments: {user: current_user}, status: nil).or(Booking.joins(:instrument).where(instruments: {user: current_user}, status: true))
   end
 
   def accept
     @booking = Booking.find(params[:booking_id])
     @booking.update(status: true)
+    redirect_to bookings_path
   end
 
   def reject
     @booking = Booking.find(params[:booking_id])
     @booking.update(status: false)
+    redirect_to bookings_path
   end
 
   def new
