@@ -5,5 +5,5 @@ class Instrument < ApplicationRecord
   validates :name, presence: true, uniqueness: true
   validates :category, presence: true, inclusion: { in: %w(Piano Violin Guitar Drums Flute Other) }
   validates :price, presence: true, numericality: { only_integer: true }
-  validates :location, presence: true
+  validates :location, :description, presence: true
 end
