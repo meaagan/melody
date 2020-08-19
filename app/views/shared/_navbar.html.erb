@@ -3,7 +3,7 @@
     <i class="fas fa-music" id="logo"></i>
   </a>
   <div class="user">
-  <%# This needs to be dynamic - add ruby code here %>
+  <%# if the user is signed-in, display the dynamic code, else signed-in page %>
   <% if user_signed_in? %>
     <p>Welcome <%= current_user.first_name %></p>
   <% end %>
