@@ -2,42 +2,54 @@
 <div class="selectors">
 <div class="dropdown show">
   <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Dropdown link
+    Category
   </a>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    <a class="dropdown-item" href="#">Action</a>
-    <a class="dropdown-item" href="#">Another action</a>
-    <a class="dropdown-item" href="#">Something else here</a>
+    <a class="dropdown-item" href="#">Piano</a>
+    <a class="dropdown-item" href="#">Violin</a>
+    <a class="dropdown-item" href="#">Guitar</a>
+    <a class="dropdown-item" href="#">Drums</a>
+    <a class="dropdown-item" href="#">Flute</a>
+    <a class="dropdown-item" href="#">Other</a>
   </div>
 </div>
 <div class="dropdown show">
   <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Dropdown link
+    Price
   </a>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    <a class="dropdown-item" href="#">Action</a>
-    <a class="dropdown-item" href="#">Another action</a>
-    <a class="dropdown-item" href="#">Something else here</a>
+    <a class="dropdown-item" href="#">$10 - $149</a>
+    <a class="dropdown-item" href="#">$150 - $499</a>
+    <a class="dropdown-item" href="#">$500 - $999</a>
+    <a class="dropdown-item" href="#">$1,000 +</a>
   </div>
 </div>
 <div class="dropdown show">
   <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Dropdown link
+    Location
   </a>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    <a class="dropdown-item" href="#">Action</a>
-    <a class="dropdown-item" href="#">Another action</a>
-    <a class="dropdown-item" href="#">Something else here</a>
+    <a class="dropdown-item" href="#">Montreal</a>
+    <a class="dropdown-item" href="#">Sherbrooke</a>
+    <a class="dropdown-item" href="#">Quebec City</a>
+    <a class="dropdown-item" href="#">Toronto</a>
+    <a class="dropdown-item" href="#">Vancouver</a>
   </div>
 </div>
 </div>
+
+<div id="map"
+     style="width: 100%; height: 600px;"
+     data-markers="<%= @markers.to_json %>"
+     data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
+
 <% @instruments.each do |instrument| %>
   <div class="card-product" id="products">
-    <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+    <img src=<%="https://source.unsplash.com/185x185/?#{instrument.category}"%> />
     <div class="card-product-infos">
       <div class="card-product-info-left">
-        <h1><%= instrument.name %></h1>
-        <h3><%= instrument.category %></h3>
+        <h1><%= instrument.name.titleize %></h1>
+        <h3><%= instrument.category.capitalize %></h3>
         <p id="description"><%= instrument.description %></p>
         <%= link_to "Show instrument", instruments_path(instrument), class: 'card-link' %>
       </div>

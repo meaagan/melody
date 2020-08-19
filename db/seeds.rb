@@ -1,6 +1,10 @@
+puts "Deleting everything"
+
 User.destroy_all
 Booking.destroy_all
 Instrument.destroy_all
+
+puts "Creating users"
 
 user1 = User.create!(email: "sarah@email.com", password: "123456", first_name: "Sarah", last_name: "Croche", address: "4520 Rue Boyer, Montréal, QC H2J 3E4")
 user2 = User.create!(email: "john@email.com", password: "123456", first_name: "John", last_name: "Doe", address: "4453 Ave Christophe-Colomb, Montreal, QC H2J 3G4")
@@ -10,6 +14,8 @@ user5 = User.create!(email: "kyle@email.com", password: "123456", first_name: "K
 user6 = User.create!(email: "millie@email.com", password: "123456", first_name: "Millie", last_name: "Senecal", address: "3591 Rue University, Montréal, QC H3A 2B1")
 user7 = User.create!(email: "meagan@email.com", password: "123456", first_name: "Meagan", last_name: "Butters", address: "250 Rue Beaudoin, Montréal, QC H4C 2Y2")
 
+millie_instrument = Instrument.create!(category: "Piano", name: "Sublim Piano", user: user6, price: 190, location: "Montreal", description: "The most famous piano in the world")
+
 100.times do
   category = Instrument::CATEGORY.sample
   Instrument.create!(
@@ -18,12 +24,23 @@ user7 = User.create!(email: "meagan@email.com", password: "123456", first_name: 
     price: Faker::Number.number(digits: 2),
     location: ["Montreal", "Sherbrooke", "Quebec City", "Toronto", "Vancouver"].sample,
     description: Faker::Lorem.paragraph,
-    user: [user1, user2, user3, user4, user5, user6, user7].sample
+    user: [user4, user5, user6, user7].sample
     )
+  puts "Creating instruments #{category}"
 end
+
+puts "Creating bookings"
 
 Booking.create!(user: user1, instrument: Instrument.first, content: "Please I want this instrument")
 Booking.create!(user: user1, instrument: Instrument.second, content: "Hello, I would like to rent your instrument")
 Booking.create!(user: user2, instrument: Instrument.second, content: "Hello, I would like to rent your instrument :)")
 Booking.create!(user: user2, instrument: Instrument.third, content: "Hi, I would like to rent your instrument")
-Booking.create!(user: user3, instrument: Instrument.fourth, content: "Hi, I would like to rent your instrument")
+Booking.create!(user: user4, instrument: millie_instrument, content: "Hi, I would like to rent your instrument")
+Booking.create!(user: user3, instrument: Instrument.fifth, content: "Hi, I would like to rent your instrument")
+Booking.create!(user: user4, instrument: Instrument.last, content: "Hi, I would like to rent your instrument")
+Booking.create!(user: user5, instrument: Instrument.all[45], content: "Hi, I would like to rent your instrument")
+Booking.create!(user: user5, instrument: Instrument.all[67], content: "Hi, I would like to rent your instrument")
+Booking.create!(user: user6, instrument: Instrument.all[90], content: "Hi, I would like to rent your instrument")
+Booking.create!(user: user5, instrument: Instrument.all[34], content: "Hi, I would like to rent your instrument")
+
+puts "Done!!!!!!!!!!"

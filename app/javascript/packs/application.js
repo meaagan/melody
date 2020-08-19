@@ -7,7 +7,10 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
-require("bookings")
+<<<<<<< HEAD
+// require("bookings")
+=======
+>>>>>>> 5eb512c7345cb4b0559e0947c21620425e5dfd06
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
@@ -33,3 +36,9 @@ document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
 });
+
+import { initMapbox } from '../plugins/init_mapbox';
+
+document.addEventListener('turbolinks:load', () => {
+  initMapbox();
+})
