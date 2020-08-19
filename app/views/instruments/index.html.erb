@@ -31,13 +31,19 @@
   </div>
 </div>
 </div>
+
+<div id="map"
+     style="width: 100%; height: 600px;"
+     data-markers="<%= @markers.to_json %>"
+     data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
+
 <% @instruments.each do |instrument| %>
   <div class="card-product" id="products">
-    <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+    <img src=<%="https://source.unsplash.com/185x185/?#{instrument.category}"%> />
     <div class="card-product-infos">
       <div class="card-product-info-left">
-        <h1><%= instrument.name %></h1>
-        <h3><%= instrument.category %></h3>
+        <h1><%= instrument.name.titleize %></h1>
+        <h3><%= instrument.category.capitalize %></h3>
         <p id="description"><%= instrument.description %></p>
         <%= link_to "Show instrument", instruments_path(instrument), class: 'card-link' %>
       </div>
