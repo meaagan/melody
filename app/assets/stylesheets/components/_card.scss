@@ -1,0 +1,22 @@
+// Need to add the scss card of Kyle + Francesca (card-trip)
+
+.card-booking {
+  padding: 30px;
+  .card-booking-content {
+    justify-content: space-between;
+  }
+
+  .accept-btn & .reject-btn{
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+// delete when css for titles are done:
+
+.container > h2 {
+  color: #C5C6C7;
+  padding-top: 30px;
+}
+
+

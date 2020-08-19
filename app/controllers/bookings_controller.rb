@@ -1,7 +1,6 @@
 class BookingsController < ApplicationController
   def index
-    # @bookings = Booking.where(@booking.user.id = current_user)
-    @bookings = Booking.all
+    @bookings = Booking.joins(:instrument).where(instruments: {user: current_user})
   end
 
   def new

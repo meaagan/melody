@@ -1,16 +1,17 @@
-<h2>hello</h2>
+<div class="container">
+  <h2><%= current_user.first_name %>, all your booking's requests:</h2>
 
-<ul>
-  <% @bookings.each do |booking| %>
-  <li>
-    <%= booking.instrument.name %>
-    <%= booking.content %>
-    <%= booking.user.first_name %>
-    <% if booking.status == false %>
-      <%= "[ ]" %>
-      <% else  %>
-      <%= "[X]"  %>
+    <% @bookings.each do |booking| %>
+      <div class="card-trip card-booking">
+        <h2><%= booking.instrument.name.capitalize %></h2>
+        <p><%= booking.user.first_name %> <%= booking.user.last_name %></p>
+        <br>
+        <div class="card-booking-content">
+        <%= booking.content %>
+        <br>
+          <button class= "btn btn-primary" div="accept-btn" type="button">Accept</button>
+          <button class= "btn btn-secondary" div="reject-btn" type="button">Reject</button>
+        </div>
+      </div>
     <% end %>
-  </li>
-  <% end %>
-</ul>
+</div>
