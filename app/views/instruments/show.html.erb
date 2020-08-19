@@ -41,8 +41,12 @@
     <%= date %>
   <% end %>
 </div>
-<div id="btn-book">
-<button type="button" class="btn btn-primary btn-lg btn-block">Book</button>
+<div class="submit">
+  <%= simple_form_for [@instrument, @booking] do |f| %>
+    <%= f.input :content, label: "Please include all questions below" %>
+    <div id="btn-book">
+    <%= f.submit "Book", class:"btn btn-primary btn-lg btn-block" %>
+    </div>
+  <% end %>
 </div>
 
-</div>
