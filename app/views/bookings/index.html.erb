@@ -9,8 +9,12 @@
         <div class="card-booking-content">
         <%= booking.content %>
         <br>
-          <button class= "btn btn-primary" div="accept-btn" type="button">Accept</button>
-          <button class= "btn btn-secondary" div="reject-btn" type="button">Reject</button>
+        <% if booking.status == nil %>
+          <%= link_to "Accept", booking_accept_path(booking), class: "btn btn-primary", method: :patch %>
+          <%= link_to "Reject", booking_reject_path(booking), class: "btn btn-secondary", method: :patch %>
+          <% else %>
+          <p class="btn">Accepted</p>
+          <% end %>
         </div>
       </div>
     <% end %>
