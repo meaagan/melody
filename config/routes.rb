@@ -8,6 +8,8 @@ Rails.application.routes.draw do
 
   resources :bookings, only: [:index] do
     get "/confirmation", to: "bookings#confirmation"
+    patch "/accept", to: "bookings#accept", as: "accept"
+    patch "/reject", to: "bookings#reject", as: "reject"
   end
   # generic page for confirmation
 end
