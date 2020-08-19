@@ -20,7 +20,7 @@ millie_instrument = Instrument.create!(category: "Piano", name: "Sublim Piano", 
   category = Instrument::CATEGORY.sample
   Instrument.create!(
     category: category,
-    name: "#{Faker::Color.color_name} #{category}",
+    name: "#{Faker::Color.color_name} #{category}".capitalize,
     price: Faker::Number.number(digits: 2),
     location: ["Montreal", "Sherbrooke", "Quebec City", "Toronto", "Vancouver"].sample,
     description: Faker::Lorem.paragraph,
