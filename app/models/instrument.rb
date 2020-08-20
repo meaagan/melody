@@ -1,5 +1,6 @@
 class Instrument < ApplicationRecord
   has_many :bookings, dependent: :destroy
+  has_many :meetings, dependent: :destroy
   belongs_to :user
 
   CATEGORY = %w(Piano Violin Guitar Drums Flute Other)

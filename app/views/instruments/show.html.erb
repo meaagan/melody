@@ -35,18 +35,26 @@
       <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
     </div>
   </div>
+<div class="submit">
+  <%= simple_form_for [@instrument, @booking] do |f| %>
+  <div id="booking-date">
+    <%= f.input :start_time, as: :date, html5: true %>
+    <%= f.input :end_time, as: :date, html5: true %>
+  </div>
   <div class="calendar">
     <div id="date-selection">Select your dates below</div>
   <%= month_calendar do |date| %>
-    <%= date %>
+    <p><%= date.day %></p>
+    <% num_of_bookings = @instrument.bookings.where("start_time <= ? AND end_time >= ?", date, date).count%>
+    <% if num_of_bookings != 0 %>
+     *
+    <% end %>
   <% end %>
-</div>
-<div class="submit">
-  <%= simple_form_for [@instrument, @booking] do |f| %>
+  </div>
     <%= f.input :content, label: "Please include all questions below" %>
     <div id="btn-book">
     <%= f.submit "Book", class:"btn btn-primary btn-lg btn-block" %>
     </div>
-  <% end %>
-</div>
+    <% end %>
+  </div>
 
