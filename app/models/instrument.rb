@@ -4,6 +4,7 @@ class Instrument < ApplicationRecord
 
   CATEGORY = %w(Piano Violin Guitar Drums Flute Other)
 
+  validates :user_id, presence: true
   validates :name, presence: true
   validates :category, presence: true, inclusion: { in: CATEGORY }
   validates :price, presence: true, numericality: { only_integer: true }

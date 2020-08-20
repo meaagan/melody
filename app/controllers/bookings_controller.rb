@@ -1,6 +1,6 @@
 class BookingsController < ApplicationController
   def index
-    @bookings = Booking.joins(:instrument).where(instruments: {user: current_user}, status: nil).or(Booking.joins(:instrument).where(instruments: {user: current_user}, status: true))
+    @bookings = Booking.joins(:instrument).with_instruments_for(current_user)
   end
 
   def accept
