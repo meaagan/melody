@@ -1,10 +1,8 @@
 class InstrumentsController < ApplicationController
   def index
-    # @instruments = Instrument.algolia_search("violin")
-
     @instruments = Instrument.all
 
-    @instruments = Instrument.geocoded
+    # @instruments = Instrument.geocoded
 
     @markers = @instruments.map do |instrument|
       {
@@ -12,6 +10,8 @@ class InstrumentsController < ApplicationController
         lng: instrument.longitude
       }
     end
+
+    Instrument.algolia_search(params[:query])
   end
 
   def show
