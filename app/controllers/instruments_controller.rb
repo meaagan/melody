@@ -1,6 +1,10 @@
 class InstrumentsController < ApplicationController
   def index
-    @instruments = Instrument.all
+    if params[:query].present?
+      @instruments = Instrument.algolia_search(params[:query])
+    else
+      @instruments = Instrument.all
+    end
 
     # @instruments = Instrument.geocoded
 
@@ -11,7 +15,6 @@ class InstrumentsController < ApplicationController
       }
     end
 
-    Instrument.algolia_search(params[:query])
   end
 
   def show
