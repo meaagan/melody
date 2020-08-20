@@ -2,7 +2,7 @@ class Instrument < ApplicationRecord
   has_many :bookings, dependent: :destroy
   belongs_to :user
 
-  CATEGORY = %w(Piano Violin Guitar Drums Flute Other)
+  CATEGORY = %w(Keyboard Violin Guitar Drums Flute Harmonica)
 
   validates :user_id, presence: true
   validates :name, presence: true
