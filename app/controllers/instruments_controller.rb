@@ -6,7 +6,7 @@ class InstrumentsController < ApplicationController
       @instruments = Instrument.all
     end
 
-    # @instruments = Instrument.geocoded
+    @instruments = Instrument.geocoded
 
     @markers = @instruments.map do |instrument|
       {

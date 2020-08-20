@@ -1,72 +1,71 @@
 <div class="container">
-<div class="selectors">
-<div class="dropdown show">
-  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Category
-  </a>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    <a class="dropdown-item" href="#">Piano</a>
-    <a class="dropdown-item" href="#">Violin</a>
-    <a class="dropdown-item" href="#">Guitar</a>
-    <a class="dropdown-item" href="#">Drums</a>
-    <a class="dropdown-item" href="#">Flute</a>
-    <a class="dropdown-item" href="#">Other</a>
-  </div>
-</div>
-<div class="dropdown show">
-  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Price
-  </a>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    <a class="dropdown-item" href="#">$10 - $149</a>
-    <a class="dropdown-item" href="#">$150 - $499</a>
-    <a class="dropdown-item" href="#">$500 - $999</a>
-    <a class="dropdown-item" href="#">$1,000 +</a>
-  </div>
-</div>
-<div class="dropdown show">
-  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Location
-  </a>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    <a class="dropdown-item" href="#">Montreal</a>
-    <a class="dropdown-item" href="#">Sherbrooke</a>
-    <a class="dropdown-item" href="#">Quebec City</a>
-    <a class="dropdown-item" href="#">Toronto</a>
-    <a class="dropdown-item" href="#">Vancouver</a>
-  </div>
-</div>
-</div>
-
-<div id="map"
-     style="width: 100%; height: 600px;"
-     data-markers="<%= @markers.to_json %>"
-     data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
-
-<%= form_tag instruments_path, method: :get do %>
-  <%= text_field_tag :query,
-    params[:query],
-    class: "form-control",
-    placeholder: "Find an instrument"
-  %>
-  <%= submit_tag "Search", class: "btn btn-primary" %>
-<% end %>
-
-<% @instruments.each do |instrument| %>
-  <div class="card-product" id="products">
-    <img src=<%="https://source.unsplash.com/185x185/?#{instrument.category}"%> />
-    <div class="card-product-infos">
-      <div class="card-product-info-left">
-        <h3><%= instrument.name.titleize %></h3>
-        <h2><%= instrument.category.capitalize %></h2>
-        <p id="description"><%= instrument.description %></p>
-        <%= link_to "Show instrument", instrument_path(instrument), class: 'card-link' %>
+      <%= form_tag instruments_path, method: :get, class: "search-bar" do %>
+        <%= text_field_tag :query,
+          params[:query],
+          class: "form-control",
+          placeholder: "Find an instrument"
+        %>
+        <%= submit_tag "Search", class: "btn btn-primary" %>
+      <% end %>
+    <div class="selectors">
+      <div class="dropdown show">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Category
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item">category</a>
+          <a class="dropdown-item">category</a>
+          <a class="dropdown-item">category</a>
+        </div>
       </div>
-      <div class="card-product-info-right">
-        <h2><%= instrument.location %></h2>
-        <h2>$<%= instrument.price %></h2>
+      <div class="dropdown show">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Price
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#">$10 - $149</a>
+          <a class="dropdown-item" href="#">$150 - $499</a>
+          <a class="dropdown-item" href="#">$500 - $999</a>
+          <a class="dropdown-item" href="#">$1,000 +</a>
+        </div>
       </div>
+      <div class="dropdown show">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Location
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#">Montreal</a>
+          <a class="dropdown-item" href="#">Sherbrooke</a>
+          <a class="dropdown-item" href="#">Quebec City</a>
+          <a class="dropdown-item" href="#">Toronto</a>
+          <a class="dropdown-item" href="#">Vancouver</a>
+        </div>
+      </div>
+      </div>
+
+  <div class="main-container">
+    <div class="cards">
+      <% @instruments.each do |instrument| %>
+        <div class="card-product" id="products">
+          <img src=<%="https://source.unsplash.com/185x185/?#{instrument.category}"%> />
+          <div class="card-product-infos">
+            <div class="card-product-info-left">
+              <h3><%= instrument.name.titleize %></h3>
+              <h2><%= instrument.category.capitalize %></h2>
+              <p id="description"><%= instrument.description %></p>
+              <%= link_to "Show instrument", instrument_path(instrument), class: 'card-link' %>
+            </div>
+            <div class="card-product-info-right">
+              <h2><%= instrument.location %></h2>
+              <h2>$<%= instrument.price %></h2>
+            </div>
+          </div>
+        </div>
+      <% end %>
     </div>
+    <div id="map"
+        style="width: 100%; height: 600px;"
+        data-markers="<%= @markers.to_json %>"
+        data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
   </div>
-<% end %>
 </div>
