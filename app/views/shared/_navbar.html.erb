@@ -20,7 +20,9 @@
         <a class="nav-link" href="/instruments/new" id="text">Add instrument</a>
       </li>
       <li class="nav-item dropdown">
-        <img class="avatar dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://kitt.lewagon.com/placeholder/users/ssaunier" />
+        <% if user_signed_in? && current_user.photo.attached? %>
+          <img data-toggle="dropdown" <%= cl_image_tag current_user.photo.key, class:"avatar dropdown-toggle", id:"navbarDropdown" %>/>
+        <% end %>
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#"><%= link_to "Booking Requests", bookings_path %></a>
           <a class="dropdown-item" href="#"><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></a>
