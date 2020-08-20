@@ -1,6 +1,5 @@
 class Instrument < ApplicationRecord
   include AlgoliaSearch
-  
   has_many :bookings, dependent: :destroy
   belongs_to :user
 
