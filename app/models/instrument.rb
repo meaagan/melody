@@ -3,6 +3,7 @@ class Instrument < ApplicationRecord
   has_many :bookings, dependent: :destroy
   has_many :meetings, dependent: :destroy
   belongs_to :user
+  has_many_attached :photos
 
   algoliasearch do
     attributes :name, :description, :category, :location

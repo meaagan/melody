@@ -45,7 +45,11 @@
 
 <% @instruments.each do |instrument| %>
   <div class="card-product" id="products">
-    <img src=<%="https://source.unsplash.com/185x185/?#{instrument.category}"%> />
+   <% if instrument.photos.attached? %>
+      <%= cl_image_tag instrument.photos.first.key %>
+    <% else %>
+      <img src=<%="https://source.unsplash.com/185x185/?#{instrument.category}"%> />
+   <% end %>
     <div class="card-product-infos">
       <div class="card-product-info-left">
         <h3><%= instrument.name.titleize %></h3>
