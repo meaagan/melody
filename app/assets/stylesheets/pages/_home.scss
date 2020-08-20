@@ -1,14 +1,14 @@
 // Specific CSS for your home-page
 body {
-  background-color: #0B0C10;
+  background-color: black;
 }
 
 #text {
-  color: #66FCF1;
+  color: turquoise;
 }
 
 #logo {
-  color: #66FCF1;
+  color: turquoise;
 }
 .banner {
   background-size: cover;
@@ -17,7 +17,7 @@ body {
 }
 
 .title {
-  color: #66FCF1;
+  color: turquoise;
   display: flex;
   justify-content: center;
   align-items: top;
@@ -31,7 +31,7 @@ body {
 
 .banner h2 {
   font-size: 30px;
-  color: #66FCF1;
+  color: turquoise;
   opacity: 0.9;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
 }
@@ -50,12 +50,12 @@ body {
 .search-form-control .form-control {
   height: 3.5rem;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-  border: 1px solid #E7E7E7;
+  border: 1px solid light-gray;
   border-radius: 5px;
 }
 
 .search-form-control .form-control:focus {
-  border: 1px solid #E7E7E7;
+  border: 1px solid light-gray;
   outline: none !important;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
@@ -68,12 +68,12 @@ body {
 }
 
 #search_query {
-  background-color: #C5C6C7;
+  background-color: light-gray;
   opacity: 0.6;
   color: black;
 }
 .footer {
-  background: #0B0C10;
+  background: black;
   display: flex;
   // align-items: center;
   justify-content: center;
@@ -90,11 +90,11 @@ body {
   text-decoration: none;
   font-size: 24px;
   padding: 0px 10px;
-  color: #66FCF1;
+  color: turquoise;
 }
 
 .footer-copyright {
-  color: #66FCF1;
+  color: turquoise;
   display: flex;
   align-items: center;
   opacity: 0.5;
@@ -134,7 +134,7 @@ body {
 }
 
 .chevron {
-  color: #66FCF1;
+  color: turquoise;
   display: flex;
   justify-content: center;
   position: relative;
@@ -142,7 +142,7 @@ body {
 }
 
 .user {
-  color: #66FCF1;
+  color: turquoise;
   display: flex;
   justify-content: center;
   font-size: 20px;
