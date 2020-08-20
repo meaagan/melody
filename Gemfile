@@ -7,6 +7,7 @@ gem 'devise'
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'faker'
 gem 'geocoder'
+gem 'algoliasearch-rails'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
