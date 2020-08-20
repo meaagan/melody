@@ -11,6 +11,7 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
+
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
@@ -21,11 +22,11 @@
       </li>
       <li class="nav-item dropdown">
         <% if user_signed_in? && current_user.photo.attached? %>
-          <img data-toggle="dropdown" <%= cl_image_tag current_user.photo.key, class:"avatar dropdown-toggle", id:"navbarDropdown" %>/>
+          <%= cl_image_tag current_user.photo.key, class:"avatar dropdown-toggle", id:"navbarDropdown", "data-toggle" => "dropdown" %>
         <% end %>
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#"><%= link_to "Booking Requests", bookings_path %></a>
-          <a class="dropdown-item" href="#"><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></a>
+          <a class="dropdown-item"><%= link_to "Booking Requests", bookings_path %></a>
+          <a class="dropdown-item"><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></a>
         </div>
       </li>
     </ul>
