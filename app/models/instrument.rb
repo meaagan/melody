@@ -1,6 +1,11 @@
 class Instrument < ApplicationRecord
+  include AlgoliaSearch
   has_many :bookings, dependent: :destroy
   belongs_to :user
+
+  algoliasearch do
+    attributes :name, :description, :category, :location
+  end
 
   CATEGORY = %w(Keyboard Violin Guitar Drums Flute Harmonica)
 

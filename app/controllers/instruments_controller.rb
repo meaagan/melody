@@ -1,5 +1,7 @@
 class InstrumentsController < ApplicationController
   def index
+    # @instruments = Instrument.algolia_search("violin")
+
     @instruments = Instrument.all
 
     @instruments = Instrument.geocoded

@@ -1,0 +1,160 @@
+=> [[32m#<PgSearch::Document:0x000055b2573f3a68[0m
+  id: [1;34m3[0m,
+  content:
+   [31m[1;31m"[0m[31maquamarine Violin Violin Odit blanditiis earum. Aspernatur est adipisci. Consequatur in fugit.[1;31m"[0m[31m[0m,
+  searchable_type: [31m[1;31m"[0m[31mInstrument[1;31m"[0m[31m[0m,
+  searchable_id: [1;34m181[0m,
+  created_at: [1;34;4mThu[0m, [1;34m20[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m15[0m:[1;34m54[0m:[1;34m14[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  updated_at: [1;34;4mThu[0m, [1;34m20[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m15[0m:[1;34m54[0m:[1;34m14[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m[32m>[0m,
+ [32m#<PgSearch::Document:0x00007f3e98ee5038[0m
+  id: [1;34m7[0m,
+  content:
+   [31m[1;31m"[0m[31msalmon Violin Violin Ut quia aliquid. Dolore et sunt. Omnis voluptatum veniam.[1;31m"[0m[31m[0m,
+  searchable_type: [31m[1;31m"[0m[31mInstrument[1;31m"[0m[31m[0m,
+  searchable_id: [1;34m185[0m,
+  created_at: [1;34;4mThu[0m, [1;34m20[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m15[0m:[1;34m54[0m:[1;34m14[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  updated_at: [1;34;4mThu[0m, [1;34m20[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m15[0m:[1;34m54[0m:[1;34m14[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m[32m>[0m,
+ [32m#<PgSearch::Document:0x00007f3e98ee4f70[0m
+  id: [1;34m9[0m,
+  content:
+   [31m[1;31m"[0m[31msapphire Violin Violin Quos cumque debitis. Ipsam repellendus et. Ut ab corporis.[1;31m"[0m[31m[0m,
+  searchable_type: [31m[1;31m"[0m[31mInstrument[1;31m"[0m[31m[0m,
+  searchable_id: [1;34m187[0m,
+  created_at: [1;34;4mThu[0m, [1;34m20[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m15[0m:[1;34m54[0m:[1;34m14[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  updated_at: [1;34;4mThu[0m, [1;34m20[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m15[0m:[1;34m54[0m:[1;34m14[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m[32m>[0m,
+ [32m#<PgSearch::Document:0x00007f3e98ee4ea8[0m
+  id: [1;34m18[0m,
+  content:
+   [31m[1;31m"[0m[31mperiwinkle Violin Violin In rerum quos. Molestiae minus ullam. Blanditiis sit asperiores.[1;31m"[0m[31m[0m,
+  searchable_type: [31m[1;31m"[0m[31mInstrument[1;31m"[0m[31m[0m,
+  searchable_id: [1;34m196[0m,
+  created_at: [1;34;4mThu[0m, [1;34m20[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m15[0m:[1;34m54[0m:[1;34m14[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  updated_at: [1;34;4mThu[0m, [1;34m20[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m15[0m:[1;34m54[0m:[1;34m14[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m[32m>[0m,
+ [32m#<PgSearch::Document:0x00007f3e98ee4de0[0m
+  id: [1;34m20[0m,
+  content:
+   [31m[1;31m"[0m[31mpurple Violin Violin Cupiditate provident ullam. Est iste inventore. Sapiente officia rem.[1;31m"[0m[31m[0m,
+  searchable_type: [31m[1;31m"[0m[31mInstrument[1;31m"[0m[31m[0m,
+  searchable_id: [1;34m198[0m,
+  created_at: [1;34;4mThu[0m, [1;34m20[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m15[0m:[1;34m54[0m:[1;34m14[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  updated_at: [1;34;4mThu[0m, [1;34m20[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m15[0m:[1;34m54[0m:[1;34m14[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m[32m>[0m,
+ [32m#<PgSearch::Document:0x00007f3e98ee4d18[0m
+  id: [1;34m23[0m,
+  content:
+   [31m[1;31m"[0m[31mruby Violin Violin Beatae quia dolorem. Debitis quo minima. Consequatur eum qui.[1;31m"[0m[31m[0m,
+  searchable_type: [31m[1;31m"[0m[31mInstrument[1;31m"[0m[31m[0m,
+  searchable_id: [1;34m201[0m,
+  created_at: [1;34;4mThu[0m, [1;34m20[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m15[0m:[1;34m54[0m:[1;34m14[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  updated_at: [1;34;4mThu[0m, [1;34m20[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m15[0m:[1;34m54[0m:[1;34m14[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m[32m>[0m,
+ [32m#<PgSearch::Document:0x00007f3e98ee4c50[0m
+  id: [1;34m26[0m,
+  content:
+   [31m[1;31m"[0m[31mruby Violin Violin Aut et aut. Ipsam ullam laboriosam. Est repellat et.[1;31m"[0m[31m[0m,
+  searchable_type: [31m[1;31m"[0m[31mInstrument[1;31m"[0m[31m[0m,
+  searchable_id: [1;34m103[0m,
+  created_at: [1;34;4mThu[0m, [1;34m20[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m15[0m:[1;34m54[0m:[1;34m14[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  updated_at: [1;34;4mThu[0m, [1;34m20[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m15[0m:[1;34m54[0m:[1;34m14[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m[32m>[0m,
+ [32m#<PgSearch::Document:0x00007f3e98ee4b88[0m
+  id: [1;34m27[0m,
+  content:
+   [31m[1;31m"[0m[31mcrimson Violin Violin Et repellat eligendi. Accusamus cupiditate inventore. Odio nisi accusamus.[1;31m"[0m[31m[0m,
+  searchable_type: [31m[1;31m"[0m[31mInstrument[1;31m"[0m[31m[0m,
+  searchable_id: [1;34m104[0m,
+  created_at: [1;34;4mThu[0m, [1;34m20[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m15[0m:[1;34m54[0m:[1;34m14[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  updated_at: [1;34;4mThu[0m, [1;34m20[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m15[0m:[1;34m54[0m:[1;34m14[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m[32m>[0m,
+ [32m#<PgSearch::Document:0x00007f3e98ee4a70[0m
+  id: [1;34m28[0m,
+  content:
+   [31m[1;31m"[0m[31maquamarine Violin Violin Illo maiores repudiandae. Delectus ut ut. Mollitia minus reiciendis.[1;31m"[0m[31m[0m,
+  searchable_type: [31m[1;31m"[0m[31mInstrument[1;31m"[0m[31m[0m,
+  searchable_id: [1;34m105[0m,
+  created_at: [1;34;4mThu[0m, [1;34m20[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m15[0m:[1;34m54[0m:[1;34m14[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  updated_at: [1;34;4mThu[0m, [1;34m20[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m15[0m:[1;34m54[0m:[1;34m14[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m[32m>[0m,
+ [32m#<PgSearch::Document:0x00007f3e98ee49a8[0m
+  id: [1;34m31[0m,
+  content:
+   [31m[1;31m"[0m[31multramarine Violin Violin Explicabo cupiditate beatae. Quae maiores veniam. Quis rem vel.[1;31m"[0m[31m[0m,
+  searchable_type: [31m[1;31m"[0m[31mInstrument[1;31m"[0m[31m[0m,
+  searchable_id: [1;34m108[0m,
+  created_at: [1;34;4mThu[0m, [1;34m20[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m15[0m:[1;34m54[0m:[1;34m14[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  updated_at: [1;34;4mThu[0m, [1;34m20[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m15[0m:[1;34m54[0m:[1;34m14[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m[32m>[0m,
+ [32m#<PgSearch::Document:0x00007f3e98ee48e0[0m
+  id: [1;34m35[0m,
+  content:
+   [31m[1;31m"[0m[31mviridian Violin Violin Fugit quia in. Dicta sequi id. Cupiditate accusamus et.[1;31m"[0m[31m[0m,
+  searchable_type: [31m[1;31m"[0m[31mInstrument[1;31m"[0m[31m[0m,
+  searchable_id: [1;34m112[0m,
+  created_at: [1;34;4mThu[0m, [1;34m20[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m15[0m:[1;34m54[0m:[1;34m14[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  updated_at: [1;34;4mThu[0m, [1;34m20[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m15[0m:[1;34m54[0m:[1;34m14[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m[32m>[0m,
+ [32m#<PgSearch::Document:0x00007f3e98ee4818[0m
+  id: [1;34m48[0m,
+  content:
+   [31m[1;31m"[0m[31mblack Violin Violin Iste nemo dolore. Quibusdam cumque aut. A nobis deserunt.[1;31m"[0m[31m[0m,
+  searchable_type: [31m[1;31m"[0m[31mInstrument[1;31m"[0m[31m[0m,
+  searchable_id: [1;34m125[0m,
+  created_at: [1;34;4mThu[0m, [1;34m20[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m15[0m:[1;34m54[0m:[1;34m14[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  updated_at: [1;34;4mThu[0m, [1;34m20[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m15[0m:[1;34m54[0m:[1;34m14[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m[32m>[0m,
+ [32m#<PgSearch::Document:0x00007f3e98ee4750[0m
+  id: [1;34m49[0m,
+  content:
+   [31m[1;31m"[0m[31mpurple Violin Violin Reiciendis quis sit. Quas inventore ipsa. Quia quidem voluptatem.[1;31m"[0m[31m[0m,
+  searchable_type: [31m[1;31m"[0m[31mInstrument[1;31m"[0m[31m[0m,
+  searchable_id: [1;34m126[0m,
+  created_at: [1;34;4mThu[0m, [1;34m20[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m15[0m:[1;34m54[0m:[1;34m14[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  updated_at: [1;34;4mThu[0m, [1;34m20[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m15[0m:[1;34m54[0m:[1;34m14[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m[32m>[0m,
+ [32m#<PgSearch::Document:0x00007f3e98ee4688[0m
+  id: [1;34m62[0m,
+  content:
+   [31m[1;31m"[0m[31memerald Violin Violin Sapiente sint veritatis. Et officiis repellendus. Maxime fuga architecto.[1;31m"[0m[31m[0m,
+  searchable_type: [31m[1;31m"[0m[31mInstrument[1;31m"[0m[31m[0m,
+  searchable_id: [1;34m139[0m,
+  created_at: [1;34;4mThu[0m, [1;34m20[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m15[0m:[1;34m54[0m:[1;34m14[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  updated_at: [1;34;4mThu[0m, [1;34m20[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m15[0m:[1;34m54[0m:[1;34m14[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m[32m>[0m,
+ [32m#<PgSearch::Document:0x00007f3e98ee45c0[0m
+  id: [1;34m80[0m,
+  content:
+   [31m[1;31m"[0m[31mgold Violin Violin Vero nam dicta. Sint explicabo et. Ducimus consectetur neque.[1;31m"[0m[31m[0m,
+  searchable_type: [31m[1;31m"[0m[31mInstrument[1;31m"[0m[31m[0m,
+  searchable_id: [1;34m157[0m,
+  created_at: [1;34;4mThu[0m, [1;34m20[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m15[0m:[1;34m54[0m:[1;34m14[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  updated_at: [1;34;4mThu[0m, [1;34m20[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m15[0m:[1;34m54[0m:[1;34m14[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m[32m>[0m,
+ [32m#<PgSearch::Document:0x00007f3e98ee44f8[0m
+  id: [1;34m88[0m,
+  content:
+   [31m[1;31m"[0m[31mgray Violin Violin Sint molestiae possimus. Voluptate ea recusandae. Qui quis aut.[1;31m"[0m[31m[0m,
+  searchable_type: [31m[1;31m"[0m[31mInstrument[1;31m"[0m[31m[0m,
+  searchable_id: [1;34m165[0m,
+  created_at: [1;34;4mThu[0m, [1;34m20[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m15[0m:[1;34m54[0m:[1;34m14[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  updated_at: [1;34;4mThu[0m, [1;34m20[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m15[0m:[1;34m54[0m:[1;34m14[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m[32m>[0m,
+ [32m#<PgSearch::Document:0x00007f3e98ee4430[0m
+  id: [1;34m90[0m,
+  content:
+   [31m[1;31m"[0m[31mlemon Violin Violin Illum facere nam. Earum dolor voluptatum. Quae quis sequi.[1;31m"[0m[31m[0m,
+  searchable_type: [31m[1;31m"[0m[31mInstrument[1;31m"[0m[31m[0m,
+  searchable_id: [1;34m167[0m,
+  created_at: [1;34;4mThu[0m, [1;34m20[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m15[0m:[1;34m54[0m:[1;34m14[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  updated_at: [1;34;4mThu[0m, [1;34m20[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m15[0m:[1;34m54[0m:[1;34m14[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m[32m>[0m,
+ [32m#<PgSearch::Document:0x00007f3e98ee4368[0m
+  id: [1;34m92[0m,
+  content:
+   [31m[1;31m"[0m[31mmagenta Violin Violin Reiciendis et et. Reiciendis iste quam. Sed est sunt.[1;31m"[0m[31m[0m,
+  searchable_type: [31m[1;31m"[0m[31mInstrument[1;31m"[0m[31m[0m,
+  searchable_id: [1;34m169[0m,
+  created_at: [1;34;4mThu[0m, [1;34m20[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m15[0m:[1;34m54[0m:[1;34m14[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  updated_at: [1;34;4mThu[0m, [1;34m20[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m15[0m:[1;34m54[0m:[1;34m14[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m[32m>[0m,
+ [32m#<PgSearch::Document:0x00007f3e98ee42a0[0m
+  id: [1;34m93[0m,
+  content:
+   [31m[1;31m"[0m[31msalmon Violin Violin Similique non saepe. Facere laboriosam deserunt. Vero facere ea.[1;31m"[0m[31m[0m,
+  searchable_type: [31m[1;31m"[0m[31mInstrument[1;31m"[0m[31m[0m,
+  searchable_id: [1;34m170[0m,
+  created_at: [1;34;4mThu[0m, [1;34m20[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m15[0m:[1;34m54[0m:[1;34m14[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  updated_at: [1;34;4mThu[0m, [1;34m20[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m15[0m:[1;34m54[0m:[1;34m14[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m[32m>[0m,
+ [32m#<PgSearch::Document:0x00007f3e98ee41d8[0m
+  id: [1;34m94[0m,
+  content:
+   [31m[1;31m"[0m[31mcyan Violin Violin Eos enim assumenda. Nisi voluptatem quis. Qui beatae soluta.[1;31m"[0m[31m[0m,
+  searchable_type: [31m[1;31m"[0m[31mInstrument[1;31m"[0m[31m[0m,
+  searchable_id: [1;34m171[0m,
+  created_at: [1;34;4mThu[0m, [1;34m20[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m15[0m:[1;34m54[0m:[1;34m14[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  updated_at: [1;34;4mThu[0m, [1;34m20[0m [1;34;4mAug[0m [1;34m2020[0m [1;34m15[0m:[1;34m54[0m:[1;34m14[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m[32m>[0m]

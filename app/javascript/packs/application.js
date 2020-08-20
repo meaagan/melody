@@ -7,11 +7,6 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
-<<<<<<< HEAD
-=======
-// require("bookings")
-
->>>>>>> bb8d09d0ed4569f37840a4061b22684eec07253b
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
