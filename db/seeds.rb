@@ -14,13 +14,14 @@ user5 = User.create!(email: "kyle@email.com", password: "123456", first_name: "K
 user6 = User.create!(email: "millie@email.com", password: "123456", first_name: "Millie", last_name: "Senecal", address: "3591 Rue University, Montréal, QC H3A 2B1")
 user7 = User.create!(email: "meagan@email.com", password: "123456", first_name: "Meagan", last_name: "Butters", address: "250 Rue Beaudoin, Montréal, QC H4C 2Y2")
 
-millie_instrument = Instrument.create!(category: "Piano", name: "Sublim Piano", user: user6, price: 190, location: "Montreal", description: "The most famous piano in the world")
+millie_instrument = Instrument.create!(category: "Keyboard", name: "Sublim Keyboard", user: user6, price: 190, location: "Montreal", description: "The most famous keyboard in the world")
 
-100.times do
+20.times do
+  name = ["Cool", "Rare", "Super", "Vintage", "Broken", "Very beautiful", "Beautifully sounding", "Cursed"].sample
   category = Instrument::CATEGORY.sample
   Instrument.create!(
     category: category,
-    name: "#{Faker::Color.color_name} #{category}",
+    name:  "#{name} #{category}".capitalize,
     price: Faker::Number.number(digits: 2),
     location: ["Montreal", "Sherbrooke", "Quebec City", "Toronto", "Vancouver"].sample,
     description: Faker::Lorem.paragraph,
@@ -38,9 +39,9 @@ Booking.create!(user: user2, instrument: Instrument.third, content: "Hi, I would
 Booking.create!(user: user4, instrument: millie_instrument, content: "Hi, I would like to rent your instrument")
 Booking.create!(user: user3, instrument: Instrument.fifth, content: "Hi, I would like to rent your instrument")
 Booking.create!(user: user4, instrument: Instrument.last, content: "Hi, I would like to rent your instrument")
-Booking.create!(user: user5, instrument: Instrument.all[45], content: "Hi, I would like to rent your instrument")
-Booking.create!(user: user5, instrument: Instrument.all[67], content: "Hi, I would like to rent your instrument")
-Booking.create!(user: user6, instrument: Instrument.all[90], content: "Hi, I would like to rent your instrument")
-Booking.create!(user: user5, instrument: Instrument.all[34], content: "Hi, I would like to rent your instrument")
+Booking.create!(user: user5, instrument: Instrument.all[20], content: "Hi, I would like to rent your instrument")
+Booking.create!(user: user5, instrument: Instrument.all[19], content: "Hi, I would like to rent your instrument")
+Booking.create!(user: user6, instrument: Instrument.all[18], content: "Hi, I would like to rent your instrument")
+Booking.create!(user: user5, instrument: Instrument.all[17], content: "Hi, I would like to rent your instrument")
 
-puts "Done!!!!!!!!!!"
+puts "Done!!"
