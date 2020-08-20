@@ -13,14 +13,14 @@ body {
 .banner {
   background-size: cover;
   padding: 220px 0;
-  height: 100vh;
+  height: 90%;
 }
 
 .title {
   color: turquoise;
   display: flex;
   justify-content: center;
-  align-items: top;
+  align-items: center;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
   font-size: 80px;
   font-weight: bold;
@@ -134,26 +134,33 @@ body {
   padding: 16px;
 }
 
-.chevron {
-  color: turquoise;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  bottom: -180px;
+.btn-light {
+  opacity: 0.7;
 }
 
-.user {
+.btn-light a {
+  padding: 0;
+  text-decoration: none;
   color: turquoise;
-  display: flex;
-  justify-content: center;
-  font-size: 20px;
-}
-.carousel, .slide,
-.carousel .carousel-inner,
-.carousel .carousel-item,
-.carousel,
-.carousel .carousel-control {
-  border-radius: 10px;
-  overflow: hidden;
 }
 
+.btn-light:hover {
+  opacity: .9;
+  transition: 0.5s;
+}
+
+#center-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home-description {
+  border: 1px solid turquoise;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+.container h4 {
+  color: turquoise;
+}
