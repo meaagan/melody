@@ -48,14 +48,14 @@
     <img src=<%="https://source.unsplash.com/185x185/?#{instrument.category}"%> />
     <div class="card-product-infos">
       <div class="card-product-info-left">
-        <h1><%= instrument.name.titleize %></h1>
-        <h3><%= instrument.category.capitalize %></h3>
+        <h3><%= instrument.name.titleize %></h3>
+        <h2><%= instrument.category.capitalize %></h2>
         <p id="description"><%= instrument.description %></p>
         <%= link_to "Show instrument", instrument_path(instrument), class: 'card-link' %>
       </div>
       <div class="card-product-info-right">
-        <h3><%= instrument.location %></h3>
-        <h4>$<%= instrument.price %></h4>
+        <h2><%= instrument.location %></h2>
+        <h2>$<%= instrument.price %></h2>
       </div>
     </div>
   </div>

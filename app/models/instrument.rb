@@ -1,9 +1,14 @@
 class Instrument < ApplicationRecord
+  include AlgoliaSearch
   has_many :bookings, dependent: :destroy
   has_many :meetings, dependent: :destroy
   belongs_to :user
 
-  CATEGORY = %w(Piano Violin Guitar Drums Flute Other)
+  algoliasearch do
+    attributes :name, :description, :category, :location
+  end
+
+  CATEGORY = %w(Keyboard Violin Guitar Drums Flute Harmonica)
 
   validates :user_id, presence: true
   validates :name, presence: true
