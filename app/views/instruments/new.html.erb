@@ -3,10 +3,11 @@
 
   <%= simple_form_for @instrument do |f| %>
     <%= f.input :name, label: "Name" %>
-    <%= f.input :category, collection: [ "Piano", "Guitar", "Violin", "Flute", "Drums", "Other" ] %>
+    <%= f.input :category, collection: [ "Piano", "Guitar", "Violin", "Flute", "Drums", "Harmonica", "Microphone", "Harp", "Accordion", "Maracas", "Saxophone", "Xylophone" ] %>
     <%= f.input :description, label: "Description" %>
     <%= f.input :location, collection: [ "Montreal", "Sherbrooke", "Quebec City", "Toronto", "Vancouver" ]  %>
     <%= f.input :price, label: "Price" %>
+    <%= f.input :photos, as: :file, input_html: { multiple: true } %>
     <%= f.submit "Add instrument", class:"btn btn-primary" %>
   <% end %>
 </div>

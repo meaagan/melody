@@ -4,17 +4,29 @@
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      <% if @instrument.photos.third %>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      <% end %>
     </ol>
     <div class="carousel-inner">
     <div class="carousel-item active">
+    <% if @instrument.photos.first %>
+      <%= cl_image_tag @instrument.photos.first.key, height: 200, width: 1110, crop: :fill %>
+      <% else %>
       <img id="image" src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+      <% end %>
     </div>
     <div class="carousel-item">
+      <% if @instrument.photos.second %>
+      <%= cl_image_tag @instrument.photos.second.key, height: 200, width: 1110, crop: :fill %>
+      <% else %>
       <img id="image" src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+      <% end %>
     </div>
     <div class="carousel-item">
-      <img id="image" src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+      <% if @instrument.photos.third %>
+      <%= cl_image_tag @instrument.photos.third.key, height: 200, width: 1110, crop: :fill %>
+      <% end %>
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -28,11 +40,13 @@
 </div>
     <div class="card-trip-infos">
       <div>
-        <h2>Title here</h2>
-        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+        <h2><%= @instrument.name %></h2>
+        <p><%= @instrument.description %></p>
+        <p>Rentee: <%= @instrument.user.first_name %> <%= @instrument.user.last_name %></p>
       </div>
-      <h2 class="card-trip-pricing">£99.99</h2>
-      <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
+      <h2 class="card-trip-pricing">$<%= @instrument.price %></h2>
+      <%= cl_image_tag @instrument.user.photo.key, class:"card-trip-user avatar-bordered" %>
+      <!-- <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" /> -->
     </div>
   </div>
 <div class="submit">
