@@ -9,7 +9,7 @@
     <div class="carousel-inner">
     <div class="carousel-item active">
     <% if @instrument.photos.first %>
-      <%= cl_image_tag @instrument.photos.first.key %>
+      <%= cl_image_tag @instrument.photos.first.key, height: 200, width: 1110, crop: :fill %>
       <% else %>
       <img id="image" src="https://www.long-mcquade.com/files/18793/lg_CVN100%20case.jpg" />
       <% end %>
