@@ -11,6 +11,7 @@
 .selectors {
   display: flex;
   justify-content: space-around;
+  padding: 15px;
 }
 
 .card-product-infos {
@@ -38,3 +39,28 @@
   font-size: 15px;
 }
 
+.search-bar {
+  display:flex;
+  justify-content: space-between;
+  margin-top:  15px; 
+}
+
+#query {
+  margin-right: 10px;
+}
+
+.main-container {
+  display: flex;
+}
+
+#map {
+  position: sticky;
+  top: 0;
+  width: 45%;
+  margin-left: 3%;
+  height: 600px;
+}
+
+.cards {
+  width: 75%;
+}
