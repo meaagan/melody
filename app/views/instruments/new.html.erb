@@ -6,7 +6,18 @@
     <%= f.input :category, collection: [ "Piano", "Guitar", "Violin", "Flute", "Drums", "Harmonica", "Microphone", "Harp", "Accordion", "Maracas", "Saxophone", "Xylophone" ] %>
     <%= f.input :description, label: "Description" %>
     <%= f.input :location, collection: [ "Montreal", "Sherbrooke", "Quebec City", "Toronto", "Vancouver" ]  %>
-    <%= f.input :price, label: "Price" %>
+    <div class="form-group">
+      <label class="select required" for="instrument_location">Price <abbr title="required">*</abbr></label>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text">$</span>
+        </div>
+        <input name="instrument[price]" type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+        <div class="input-group-append">
+          <span class="input-group-text">.00</span>
+        </div>
+      </div>
+    </div>
     <%= f.input :photos, as: :file, input_html: { multiple: true } %>
     <%= f.submit "Add instrument", class:"btn btn-primary" %>
   <% end %>
