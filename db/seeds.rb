@@ -28,7 +28,7 @@ user5.photo.attach(io: file3, filename: 'millie.jpg', content_type: 'image/jpg')
 user6.photo.attach(io: file4, filename: 'meagan.jpg', content_type: 'image/jpg')
 
 
-millie_instrument = Instrument.create!(category: "Keyboard", name: "Sublim Keyboard", user: user5, price: 190, location: "Montreal", description: "The most famous keyboard in the world")
+millie_instrument = Instrument.create!(category: "Keyboard", name: "Sublim Keyboard", user_id: user5.id, price: 190, location: "Montreal", description: "The most famous keyboard in the world")
 
 20.times do
   name = ["Cool", "Rare", "Super", "Vintage", "Broken", "Very beautiful", "Beautifully sounding", "Cursed"].sample
