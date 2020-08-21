@@ -24,6 +24,12 @@ require("channels")
 
 // External imports
 import "bootstrap";
+import { loadDynamicBannerText } from '../components/banner';
+
+document.addEventListener('turbolinks:load', () => {
+  loadDynamicBannerText();
+});
+
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
