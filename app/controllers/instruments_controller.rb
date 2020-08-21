@@ -1,12 +1,12 @@
 class InstrumentsController < ApplicationController
   def index
     if params[:query].present?
-      @instruments = Instrument.algolia_search(params[:query])
+      @instruments = Instrument.geocoded.algolia_search(params[:query])
     else
-      @instruments = Instrument.all
+      @instruments = Instrument.all.geocoded
     end
 
-    # @instruments = Instrument.geocoded
+    # @instruments = @instruments.geocoded
 
     @markers = @instruments.map do |instrument|
       {
