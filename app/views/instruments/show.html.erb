@@ -4,28 +4,28 @@
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <% if @instrument.photos.third %>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      <% end %>
     </ol>
     <div class="carousel-inner">
     <div class="carousel-item active">
     <% if @instrument.photos.first %>
       <%= cl_image_tag @instrument.photos.first.key, height: 200, width: 1110, crop: :fill %>
       <% else %>
-      <img id="image" src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+      <img id="image" src="https://www.long-mcquade.com/files/18793/lg_CVN100%20case.jpg" />
       <% end %>
     </div>
     <div class="carousel-item">
       <% if @instrument.photos.second %>
       <%= cl_image_tag @instrument.photos.second.key, height: 200, width: 1110, crop: :fill %>
       <% else %>
-      <img id="image" src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+      <img id="image" src="https://guitar.com/wp-content/uploads/2017/01/Guild_M240E_troub_side-696x292.jpg" />
       <% end %>
     </div>
     <div class="carousel-item">
       <% if @instrument.photos.third %>
       <%= cl_image_tag @instrument.photos.third.key, height: 200, width: 1110, crop: :fill %>
+      <% else %>
+       <img id="image" src=https://media1.britannica.com/eb-media/41/144041-004-CDABBD8A.jpg />
       <% end %>
     </div>
   </div>
@@ -55,16 +55,16 @@
     <%= f.input :start_time, as: :date, html5: true %>
     <%= f.input :end_time, as: :date, html5: true %>
   </div>
-  <div class="calendar">
+  <div class="calendar" id="calendar-height">
     <div id="date-selection">Select your dates below</div>
-  <%= month_calendar do |date| %>
-    <p><%= date.day %></p>
-    <% num_of_bookings = @instrument.bookings.where("start_time <= ? AND end_time >= ?", date, date).count%>
-    <% if num_of_bookings != 0 %>
-     *
-    <% end %>
-  <% end %>
-  </div>
+      <%= month_calendar do |date| %>
+      <p><%= date.day %></p>
+      <% num_of_bookings = @instrument.bookings.where("start_time <= ? AND end_time >= ?", date, date).count%>
+        <% if num_of_bookings != 0 %>
+          *
+        <% end %>
+      <% end %>
+    </div>
     <%= f.input :content, label: "Please include all questions below" %>
     <div id="btn-book">
     <%= f.submit "Book", class:"btn btn-primary btn-lg btn-block" %>
