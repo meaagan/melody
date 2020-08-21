@@ -4,6 +4,7 @@
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   border-radius: 10px;
   margin-top: 40px;
+  height: 350px;
 }
 
 .card-trip > img {
@@ -46,9 +47,9 @@
 }
 
 #image {
-  height: 200px;
+  height: 275px;
   width: 100%;
-  object-fit: cover;
+  // object-fit: cover;
 }
 
 .slide {
@@ -74,3 +75,5 @@
 #booking-date {
   display: flex;
 }
+
+
