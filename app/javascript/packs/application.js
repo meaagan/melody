@@ -25,9 +25,11 @@ require("channels")
 // External imports
 import "bootstrap";
 import { loadDynamicBannerText } from '../components/banner';
+import { initMapbox } from '../plugins/init_mapbox';
 
 document.addEventListener('turbolinks:load', () => {
   loadDynamicBannerText();
+  // initMapbox();
 });
 
 
@@ -35,8 +37,4 @@ document.addEventListener('turbolinks:load', () => {
 // import { initSelect2 } from '../components/init_select2';
 
 
-import { initMapbox } from '../plugins/init_mapbox';
-
-document.addEventListener('turbolinks:load', () => {
-  initMapbox();
-})
+import "controllers"

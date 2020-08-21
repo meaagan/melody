@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   resources :instruments, only: [:index, :show, :new, :create] do
     resources :bookings, only: [:new, :create]
   end
+  get "/instruments_search", to: "instruments#search", constraints: { format: 'json' }
 
   resources :bookings, only: [:index] do
     get "/confirmation", to: "bookings#confirmation"
