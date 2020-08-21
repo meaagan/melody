@@ -2,6 +2,7 @@ class InstrumentsController < ApplicationController
   def index
     if params[:query].present?
       @instruments = Instrument.geocoded.algolia_search(params[:query])
+      render json: { instruments: @instruments }
     else
       @instruments = Instrument.all.geocoded
     end
@@ -14,7 +15,11 @@ class InstrumentsController < ApplicationController
         lng: instrument.longitude
       }
     end
+  end
 
+  def search
+    @instruments = Instrument.geocoded.algolia_search(params[:query])
+    render json: { instruments: @instruments }
   end
 
   def show

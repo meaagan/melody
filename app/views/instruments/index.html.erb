@@ -1,11 +1,10 @@
 <div class="container">
-      <%= form_tag instruments_path, method: :get, class: "search-bar" do %>
+      <%= form_tag instruments_path, method: :get, class: "search-bar", "data-controller" => "search", remote: true do %>
         <%= text_field_tag :query,
           params[:query],
-          class: "form-control",
-          placeholder: "Find an instrument"
-        %>
-        <%= submit_tag "Search", class: "btn btn-primary" %>
+          class: "form-control", "data-target" => "search.query",
+          placeholder: "Find an instrument" %>
+        <%= submit_tag "Search", class: "btn btn-primary", "data-action" => "click->search#send" %>
       <% end %>
     <div class="selectors">
       <div class="dropdown show">
@@ -44,7 +43,7 @@
       </div>
 
   <div class="main-container">
-    <div class="cards">
+    <div class="cards ">
       <% @instruments.each do |instrument| %>
         <div class="card-product" id="products">
           <img src=<%="https://source.unsplash.com/185x185/?#{instrument.category}"%> />
