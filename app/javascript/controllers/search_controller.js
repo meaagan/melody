@@ -41,7 +41,7 @@ export default class extends Controller {
             </div>
             <div class="card-product-info-right">
               <h2>${instrument.location} </h2>
-              <h2>${instrument.price}</h2>
+              <h2>$${instrument.price}</h2>
             </div>
           </div>
         </div>
