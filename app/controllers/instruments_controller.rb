@@ -10,8 +10,9 @@ class InstrumentsController < ApplicationController
 
     @markers = @instruments.map do |instrument|
       {
-        lat: instrument.latitude,
-        lng: instrument.longitude
+        lat: instrument.user.latitude,
+        lng: instrument.user.longitude,
+        infoWindow: render_to_string(partial: "info_window", locals: { instrument: instrument })
       }
     end
 
