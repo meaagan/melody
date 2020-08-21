@@ -39,7 +39,7 @@ millie_instrument = Instrument.create!(category: "Keyboard", name: "Sublim Keybo
     price: Faker::Number.number(digits: 2),
     location: ["Montreal", "Sherbrooke", "Quebec City", "Toronto", "Vancouver"].sample,
     description: Faker::Lorem.paragraph,
-    user: [user3, user4, user5, user6].sample
+    user_id: [user3, user4, user5, user6].sample.id
     )
   puts "Creating instruments #{category}"
 end
