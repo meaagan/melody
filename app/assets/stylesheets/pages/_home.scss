@@ -151,7 +151,6 @@ body {
 
 #center-home {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
@@ -168,6 +167,9 @@ body {
 #banner-typed-text {
   color: turquoise;
   margin-bottom: 15px;
-  font-family: 'Caveat', cursive;
   font-size: 35px;
+}
+
+.typed-cursor {
+  color: white;
 }
